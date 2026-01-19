@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Hamzah Luqman | Datasets</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+		 <script type="text/javascript">
+function toggleBibtex(id) {
+  var el = document.getElementById("bib_" + id);
+  if (el.style.display === "none" || el.classList.contains("noshow")) {
+    el.style.display = "block";
+    el.classList.remove("noshow");
+  } else {
+    el.style.display = "none";
+    el.classList.add("noshow");
+  }
+}
+</script>
+		 
+		
+		<style>
+		.dataset_body{     font-size: 0.7em;   
+					  line-height: 1.5;
+}
+.bibtex {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+  white-space: pre-wrap;
+}
+.noshow { display: none; }
+</style>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <span><a href="#"><img border="0" width="170" src="images/kfupm-seeklogo.png"/></a></span> -->
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="index.html">Home</a>
+                        </li>
+
+                        <!-- <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Home<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
+                                <li><a href="bio.html">Biography</a></li>
+                                <li><a href="cv.html">CV (Web)</a></li>
+                                <li><a target="_blank" href="zeinalipour.pdf">CV (PDF)</a></li>
+                            </ul>
+                        </li> -->
+                                                <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="publications.html">Publications</a>
+                        </li>
+
+                        <!-- <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Publications<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li>
+                                <li><a href="publications/">All</a></li>
+                            </ul>
+                        </li> -->
+						  <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="projects.html">Projects</a>
+                        </li>
+                                                <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-systems-content').show();" href="datasets.html">Datasets</a>
+                        </li>
+
+                                                <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="teaching.html">Teaching</a>
+                        </li>
+                                                <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-slrg-content').show();" href="#">SLRG Lab</a>
+                        </li>
+                                                <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-vll-content').show();" href="#">VLL </a>
+                        </li>
+
+                                                                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-students-content').show();" href="students.html">Students</a>
+                        </li>
+
+                        <!-- <li class="page-scroll">
+                            <a href="talks.html/">Talks</a>
+                        </li> -->
+<!-- 
+                                                <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+                        </li> -->
+
+
+                        <!-- <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
+                        </li>
+                        
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
+                        </li> -->
+                      
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <!-- <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div> -->
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+      
+        
+       
+        <p></p>
+				
+
+		
+ <section  name="datasets_sl" id="datasets_sl">
+            <div class="container lead">
+				<div style="text-align: center;">
+									<hr class="star-primary">
+                        <br>
+                        <h2 style="font-size: 0.8em;"> <span class="label label-warning"> <a href="#datasets_sl"> <font color=white> Sign Language Datasets </font> </a> </span>&nbsp | 
+							<a href="#arabic_nlp"> Arabic NLP Datasets </a> | 
+							<a href="#ArabicOCR"> Arabic OCR </a> 
+						</h2>
+					<hr class="star-primary">
+				</div>
+				<!-- <div>
+					<h2> Sign Language Datasets </h2>
+				</div> -->
+				<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12">
+				        <img src="images/isharah.png" class="img-responsive img-thumbnail" alt="Isharah Dataset">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="https://snalyami.github.io/Isharah_CSLR/">Isharah dataset </a></h4>
+				        <p class="dataset_body">
+				            Isharah is a large-scale dataset for Continuous Saudi Sign Language (SSL) recognition and translation. It features over 30,000 video samples signed by deaf and hearing-impaired individuals using smartphones in varied settings.
+
+				        </p>
+												<p class="dataset_body"> 
+						<a href="https://snalyami.github.io/Isharah_CSLR/" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('alyami2025isharah')"> [BibTeX] </a>
+						<a href="https://arxiv.org/pdf/2506.03615" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="alyami2025isharah" class="bibtex noshow">
+						<pre>
+						@article{alyami2025isharah,
+						  title={Isharah: A Large-Scale Multi-Scene Dataset for Continuous Sign Language Recognition},
+						  author={Alyami, Sarah and Luqman, Hamzah and Al-Azani, Sadam and Alowaifeer, Maad and Alharbi, Yazeed and Alonaizan, Yaser},
+						  journal={arXiv preprint arXiv:2506.03615},
+						  year={2025}
+						}
+						</pre>
+				    </div>
+				    </div>
+				</div>
+
+
+<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12">
+				        <img src="images/KArSL_ds.png" class="img-responsive img-thumbnail" alt="KArSL Dataset">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="https://hamzah-luqman.github.io/KArSL/">KArSL dataset </a></h4>
+				        <p class="dataset_body">
+				            KArSL is the largest video dataset for Word-Level Arabic Sign Language (ArSL). The database consists of 502 isolated sign words collected using Microsoft Kinect V2. Each sign of the database is performed by three professional signers. Each signer repeated each sign 50 times, which resulted in a total of 75,300 samples.
+
+				        </p>
+												<p class="dataset_body"> 
+						<a href="https://hamzah-luqman.github.io/KArSL/" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('sidig2021karsl')"> [BibTeX] </a>
+						<a href="https://dl.acm.org/doi/pdf/10.1145/3423420" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="sidig2021karsl" class="bibtex noshow">
+						<pre>
+						@article{sidig2021karsl,
+						  title={KArSL: Arabic sign language database},
+						  author={Sidig, Ala Addin I and Luqman, Hamzah and Mahmoud, Sabri and Mohandes, Mohamed},
+						  journal={ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)},
+						  volume={20},
+						  number={1},
+						  pages={1--19},
+						  year={2021},
+						  publisher={ACM New York, NY, USA}
+						}
+						</pre>
+				    </div>
+				    </div>
+				</div>
+<!--  -->
+
+<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12" style="text-align: right;">
+				        <img src="images/Arabsign_Ds.PNG" class="img-responsive img-thumbnail" alt="ArabSign Dataset" style="width:80%; height:auto;">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="https://hamzah-luqman.github.io/ArabSign/">ArabSign dataset</a></h4>
+				        <p class="dataset_body">
+ArabSign, a continuous Arabic sign language (ArSL) dataset consists of 9,335 samples representing 50 sentences of Arabic sign language. The dataset’s sentences were performed by 6 signers. Each sentence was repeated by each signer at least 30 times at different sessions. All signers are male with different skin colors. ArabSign dataset was recorded using a Kinect V2 camera that provides three types of information (color, depth, and skeleton joint points) recorded simultaneously for each sentence.
+				        </p>
+												<p class="dataset_body"> 
+						<a href="https://hamzah-luqman.github.io/ArabSign/" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('luqman2023arabsign')"> [BibTeX] </a>
+						<a href="https://ieeexplore.ieee.org/abstract/document/10042720" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="luqman2023arabsign" class="bibtex noshow">
+						<pre>
+						@inproceedings{luqman2023arabsign,
+						  title={ArabSign: A multi-modality dataset and benchmark for continuous Arabic Sign Language recognition},
+						  author={Luqman, Hamzah},
+						  booktitle={2023 IEEE 17th International Conference on Automatic Face and Gesture Recognition (FG)},
+						  pages={1--8},
+						  year={2023},
+						  organization={IEEE}
+						}
+						</pre>
+				    </div>
+				    </div>
+				</div>
+<!--  -->
+<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12" style="text-align: right;">
+				        <img src="images/mArSL_ds.PNG" class="img-responsive img-thumbnail" alt="mArSL Dataset" style="width:60%; height:auto;">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="https://hamzah-luqman.github.io/marsl/">mArSL dataset  </a></h4>
+				        <p class="dataset_body">
+mArSL is an isolated Arabic sign language (ArSL) dataset consisting of 6,748 samples representing 50 signs of Arabic sign language. The dataset’s signs were performed by four signers. Each sign was repeated by each signer several times at different sessions. All signers are male with different skin colors. The main focus of this dataset was to record signs that require <bold> facial expressions (non-manual gestures) </bold> to study the importance of this component for sign language recognition.
+
+				        </p>
+												<p class="dataset_body"> 
+						<a href="https://hamzah-luqman.github.io/marsl/" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('luqman2021towards')"> [BibTeX] </a>
+						<a href="https://www.mdpi.com/2079-9292/10/14/1739" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="luqman2021towards" class="bibtex noshow">
+						<pre>
+						@article{luqman2021towards,
+						  title={Towards hybrid multimodal manual and non-manual Arabic sign language recognition: MArSL database and pilot study},
+						  author={Luqman, Hamzah and El-Alfy, El-Sayed M},
+						  journal={Electronics},
+						  volume={10},
+						  number={14},
+						  pages={1739},
+						  year={2021},
+						  publisher={MDPI}
+						}
+						</pre>
+				    </div>
+				    </div>
+				</div>
+<!--  -->				
+				 
+            </div>
+        </section>
+		
+	<!-- ######################################################### -->		
+<section  name="arabic_nlp" id="arabic_nlp">
+            <div class="container lead">
+				<div  style="text-align: center;">
+									<hr class="star-primary">
+                       
+                        <h2 style="font-size: 0.8em;"> 
+							<a href="#datasets_sl">  Sign Language Datasets  </a>  &nbsp | 
+							<span class="label label-warning"> <a href="#arabic_nlp"> <font color=white> Arabic NLP Datasets </font> </a> </span> | 
+							<a href="#ArabicOCR"> Arabic OCR </a> 
+						</h2>
+					  <br>
+				</div>
+				
+				
+<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12">
+				        <img src="images/pearl_ds2.JPG" class="img-responsive img-thumbnail" alt="Pearl Dataset">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="https://github.com/UBC-NLP/pearl">Pearl Dataset  </a></h4>
+				        <p class="dataset_body">
+Pearl is a large-scale Arabic multimodal dataset and benchmark explicitly designed for cultural understanding. Constructed through advanced agentic workflows and extensive human-in-the-loop annotations by 45 annotators from across the Arab world, PEARL comprises over 309K multimodal examples spanning ten culturally significant domains covering all Arab countries. 
+				        </p>
+												<p class="dataset_body"> 
+						<a href="https://github.com/UBC-NLP/pearl" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('luqman2021towards')"> [BibTeX] </a>
+						<a href="https://aclanthology.org/2025.findings-emnlp.1254/" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="luqman2021towards" class="bibtex noshow">
+						<pre>
+						@inproceedings{alwajih-etal-2025-pearl,
+    title = "Pearl: A Multimodal Culturally-Aware {A}rabic Instruction Dataset",
+    author = "Alwajih, Fakhraddin  and
+      Magdy, Samar M.  and
+      El Mekki, Abdellah  and
+      Nacar, Omer  and
+      Nafea, Youssef  and
+      Abdelfadil, Safaa Taher  and
+      Yahya, Abdulfattah Mohammed  and
+      Luqman, Hamzah  and
+      Almarwani, Nada  and
+      Aloufi, Samah  and
+      Qawasmeh, Baraah  and
+      Atou, Houdaifa  and
+      Sibaee, Serry  and
+      Alsayadi, Hamzah A.  and
+      Al-Dhabyani, Walid  and
+      Al-shaibani, Maged S.  and
+      El aatar, Aya  and
+      Qandos, Nour  and
+      Alhamouri, Rahaf  and
+      Ahmad, Samar  and
+      AL-Ghrawi, Mohammed Anwar  and
+      Yacoub, Aminetou  and
+      AbuHweidi, Ruwa  and
+      Lemin, Vatimetou Mohamed  and
+      Abdel-Salam, Reem  and
+      Bashiti, Ahlam  and
+      Ammar, Adel  and
+      Alansari, Aisha  and
+      Ashraf, Ahmed  and
+      Alturayeif, Nora  and
+      Alcoba Inciarte, Alcides  and
+      Elmadany, AbdelRahim A.  and
+      Tourad, Mohamedou Cheikh  and
+      Berrada, Ismail  and
+      Jarrar, Mustafa  and
+      Shehata, Shady  and
+      Abdul-Mageed, Muhammad",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.1254/",
+    doi = "10.18653/v1/2025.findings-emnlp.1254",
+    pages = "23048--23079",
+    ISBN = "979-8-89176-335-7"
+}
+						</pre>
+				    </div>
+				    </div>
+				</div>
+<!--  -->		
+
+<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12" style="text-align: right;">
+				        <img src="images/stance_ds.png" class="img-responsive img-thumbnail" alt="Mawqif Dataset" style="width:50%; height:auto;">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="https://github.com/NoraAlt/Mawqif-Arabic-Stance">Mawqif Dataset  </a></h4>
+				        <p class="dataset_body">
+The first Arabic dataset for target-specific stance detection, composed of 4,121 tweets. Mawqi is a multi-label dataset where each data point is annotated for stance, sentiment, and sarcasm, which will provide a benchmark for the three tasks.
+
+
+				        </p>
+												<p class="dataset_body"> 
+						<a href="https://github.com/NoraAlt/Mawqif-Arabic-Stance" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('alturayeif-etal-2022-mawqif')"> [BibTeX] </a>
+						<a href="https://aclanthology.org/2022.wanlp-1.16.pdf" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="alturayeif-etal-2022-mawqif" class="bibtex noshow">
+						<pre>
+						@inproceedings{alturayeif-etal-2022-mawqif,
+    title = "Mawqif: A Multi-label {A}rabic Dataset for Target-specific Stance Detection",
+    author = "Alturayeif, Nora Saleh  and
+      Luqman, Hamzah Abdullah  and
+      Ahmed, Moataz Aly Kamaleldin",
+    booktitle = "Proceedings of the The Seventh Arabic Natural Language Processing Workshop (WANLP)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.wanlp-1.16",
+    pages = "174--184",
+}
+
+						</pre>
+				    </div>
+				    </div>
+				</div>
+<!--  -->	
+
+
+<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12" style="text-align: right;">
+				        <img src="images/AraHalluQA.png" class="img-responsive img-thumbnail" alt="AraHalluQA Dataset" style="width:50%; height:auto;">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="https://github.com/aishaalansari57/AraHalluEval">AraHalluQA Dataset  </a></h4>
+				        <p class="dataset_body">
+AraHalluEval is a manually annotated Arabic hallucination evaluation dataset designed to enable fine-grained analysis of hallucinations in LLMs. It covers two core Arabic natural language generation tasks: generative question answering (GQA) and abstractive summarization. The dataset includes model outputs annotated along factuality and faithfulness dimensions using 12 fine-grained hallucination indicators. AraHalluEval comprises 300 GQA instances and 100 summarization instances, with outputs generated by 12 LLMs, including Arabic, multilingual, and reasoning-based models.  
+
+ 
+				        </p>
+												<p class="dataset_body"> 
+						<a href="https://github.com/aishaalansari57/AraHalluEval" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('alansari-luqman-2025-arahallueval')"> [BibTeX] </a>
+						<a href="https://aclanthology.org/2025.arabicnlp-main.12/" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="alansari-luqman-2025-arahallueval" class="bibtex noshow">
+						<pre>
+						@inproceedings{alansari-luqman-2025-arahallueval,
+    title = "{A}ra{H}allu{E}val: A Fine-grained Hallucination Evaluation Framework for {A}rabic {LLM}s",
+    author = "Alansari, Aisha  and
+      Luqman, Hamzah",
+    booktitle = "Proceedings of The Third Arabic Natural Language Processing Conference",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.arabicnlp-main.12/",
+    doi = "10.18653/v1/2025.arabicnlp-main.12",
+    pages = "148--161",
+    ISBN = "979-8-89176-352-4"
+}
+
+						</pre>
+				    </div>
+				    </div>
+				</div>
+<!--  -->	
+				
+		<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12" style="text-align: right;">
+				        <img src="images/wasm_ds.png" class="img-responsive img-thumbnail" alt="Wasim Dataset">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="https://github.com/Hamzah-Luqman/wasm">Wasm Dataset  </a></h4>
+				        <p class="dataset_body">
+The WASM dataset is a newly introduced Arabic Twitter dataset designed for hashtag recommendation and classification tasks. It contains over 100,000 Arabic tweets that have been manually and automatically filtered and annotated with 87 distinct hashtags, making it suitable for developing and benchmarking models that suggest relevant hashtags based on tweet content and filter unrelated tweets.
+
+				        </p>
+												<p class="dataset_body"> 
+						<a href="https://github.com/Hamzah-Luqman/wasm" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('al2024wasm')"> [BibTeX] </a>
+						<a href="https://www.researchgate.net/profile/Hamzah-Luqman/publication/377143415_WASM_A_Dataset_for_Hashtag_Recommendation_for_Arabic_Tweets/links/65d99a45adf2362b63544ce9/WASM-A-Dataset-for-Hashtag-Recommendation-for-Arabic-Tweets.pdf" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="al2024wasm" class="bibtex noshow">
+						<pre>
+						@article{al2024wasm,
+  title={Wasm: A dataset for hashtag recommendation for arabic tweets},
+  author={Al-Shaibani, Maged S and Luqman, Hamzah and Al-Ghofaily, Abdulaziz S and Al-Najim, Abdullatif A},
+  journal={Arabian Journal for Science and Engineering},
+  volume={49},
+  number={9},
+  pages={12131--12145},
+  year={2024},
+  publisher={Springer}
+}
+						</pre>
+				    </div>
+				    </div>
+				</div>
+<!--  -->		
+
+				<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12">
+				        <img src="images/maaks_ds.png" class="img-responsive img-thumbnail" alt="Ma’aks Dataset">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="https://github.com/KFUPM-JRCAI/ArabicTextSentimentSwap">Ma’aks Dataset  </a></h4>
+				        <p class="dataset_body">
+MA’AKS is a novel Arabic parallel dataset for sentiment style transfer. MA’AKS consists of 5k sentences in modern standard Arabic with positive/negative sentiments. Each sentence is meticulously annotated to ensure high-quality parallel sentiment pairs, supporting both supervised and unsupervised learning.
+				        </p>
+												<p class="dataset_body"> 
+						<a href="https://github.com/KFUPM-JRCAI/ArabicTextSentimentSwap" target="_blank">[Dataset]</a>							
+						<a href="javascript:toggleBibtex('mughaus2026ma')"> [BibTeX] </a>
+						<a href="https://link.springer.com/article/10.1007/s10579-025-09895-4" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="mughaus2026ma" class="bibtex noshow">
+						<pre>
+						@article{mughaus2026ma,
+						  title={Ma’aks: manually-curated parallel dataset for Arabic text sentiment swap},
+						  author={Mughaus, Raed and Abudalfa, Shadi and Luqman, Hamzah and Abdu, Fahad and AlAli, Mohammed and Al-Dowayan, Nawaf and Abdelali, Ahmed},
+						  journal={Language Resources and Evaluation},
+						  volume={60},
+						  number={1},
+						  pages={1},
+						  year={2026},
+						  publisher={Springer}
+						}
+						</pre>
+				    </div>
+				    </div>
+				</div>
+<!--  -->		
+
+
+
+
+				
+            </div>
+        </section>
+		
+<!-- ######################################################### -->		
+<!-- ######################################################### -->		
+<section  name="ArabicOCR" id="ArabicOCR">
+            <div class="container lead">
+				<div  style="text-align: center;">
+									<hr class="star-primary">
+                        
+                        <h2 style="font-size: 0.8em;"> 
+							<a href="#datasets_sl">  Sign Language Datasets  </a>  &nbsp | 
+							 <a href="#arabic_nlp">  Arabic NLP Datasets  </a>  | 
+							<span class="label label-warning"><a href="#ArabicOCR"> <font color=white> Arabic OCR  </font> </a> </span>
+						</h2>
+					 <br>
+				</div>
+				
+				
+<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12">
+				        <img src="images/KAFD_ds.PNG" class="img-responsive img-thumbnail" alt="KAFD Dataset">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="#" target="_blank">KAFD dataset </a></h4>
+				        <p class="dataset_body">
+KAFD is a multi-font, multi-size, multi-style, and multi-resolution Arabic text images database. It consists of 40 Arabic fonts and is available in two forms (Page and Line). The dataset can be used for developing and evaluating Arabic OCR systems and text understanding on text images. 
+				        </p>
+												<p class="dataset_body"> 
+						<a href="#" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('luqman2014kafd')"> [BibTeX] </a>
+						<a href="https://www.sciencedirect.com/science/article/pii/S0031320313005463" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="luqman2014kafd" class="bibtex noshow">
+						<pre>
+						@article{luqman2014kafd,
+						  title={KAFD Arabic font database},
+						  author={Luqman, Hamzah and Mahmoud, Sabri A and Awaida, Sameh},
+						  journal={Pattern Recognition},
+						  volume={47},
+						  number={6},
+						  pages={2231--2240},
+						  year={2014},
+						  publisher={Elsevier}
+						}
+						</pre>
+				    </div>
+			
+				    </div>
+				</div>
+<!--  -->				
+
+				<!--  -->
+	<div class="row patent-item" style="margin-bottom:30px;">
+				    <div class="col-md-4 col-sm-12">
+				        <img src="images/khatt.jpg" class="img-responsive img-thumbnail" alt="Online-KHATT Dataset">
+				    </div>
+				    <div class="col-md-8 col-sm-12">
+				        <h4 style="margin-top: 0; font-weight: bold; font-size: large; "><a href="#" target="_blank">Online-KHATT dataset </a></h4>
+				        <p class="dataset_body">
+The database consists of 10,040 lines of Arabic handwritten text written by 623 writers using Android- and Windows-based devices. We have segmented part of the collected data into characters along with their ground
+truths.				        </p>
+												<p class="dataset_body"> 
+						<a href="#" target="_blank"> [Dataset] </a>
+						<a href="javascript:toggleBibtex('mahmoud2018online')"> [BibTeX] </a>
+						<a href="https://benthamopenarchives.com/contents/pdf/TOCSJ/TOCSJ-12-42.pdf" target="_blank"> [PDF] </a>	
+						</p>
+						<div id="mahmoud2018online" class="bibtex noshow">
+						<pre>
+						@article{mahmoud2018online,
+  title={Online-khatt: an open-vocabulary database for Arabic online-text processing},
+  author={Mahmoud, Sabri A and Luqman, Hamzah and Al-Helali, Baligh M and BinMakhashen, Galal and Parvez, Mohammad Tanvir},
+  journal={The Open Cybernetics \& Systemics Journal},
+  volume={12},
+  number={1},
+  pages={42--59},
+  year={2018}
+}
+						</pre>
+				    </div>
+			
+				    </div>
+				</div>
+<!--  -->				
+			
+				
+            </div>
+        </section>
+		
+<!-- ######################################################### -->	
+		
+       
+        
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2026 | Hamzah Luqman. Credits: AR template
+                    <!-- <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a> -->
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>
