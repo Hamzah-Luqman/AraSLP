@@ -41,9 +41,7 @@
   }
 
   /* Height control: reduce height (desktop), slightly taller on mobile */
-  .hero {
-    height: 320px;       /* desktop height */
-  }
+  
   @media (max-width: 992px) {
     .hero { height: 260px; }
   }
@@ -78,17 +76,7 @@
   }
 
   /* Text positioning */
-  .hero__content {
-    position: relative;
-    z-index: 2;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 22px 28px;
-    color: #fff;
-    text-align: left;
-  }
+ 
 
   .hero__content h1 {
     margin: 0 0 8px 0;
@@ -114,39 +102,33 @@
     padding-right: 0;
   }
 
-  .hero {
-    width: 100%;
-    height: 320px;   /* you can change this number */
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-  }
-/* Text positioning */
   .hero__content {
   position: relative;
   z-index: 2;
 
-  /* IMPORTANT: size only to content */
+  /* KEY FIX: let box size itself to text */
   display: inline-block;
+  height: auto;
 
-  background: rgba(0, 0, 0, 0.45); /* transparent black */
-  padding: 14px 22px;              /* controls spacing around text */
+  background: rgba(0, 0, 0, 0.45); /* black transparent box */
+  padding: 14px 22px;
   border-radius: 8px;
 
   text-align: center;
   color: #fff;
 }
 
- .hero {
+            .hero {
   position: relative;
-  height:100%;
+  height: 320px;
 
   display: flex;
-  align-items: center;     /* vertical centering */
-  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
 
   overflow: hidden;
 }
+
 </style>
 
     </head>
